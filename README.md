@@ -39,12 +39,12 @@ Kemudian jadikan Water7 sebagai Proxy Server
 
 ### 2.	dan Foosha sebagai DHCP Relay
 
-![](img\modul3_no1_Water7_ProxyServer.PNG)
+![](img/modul3_no1_Water7_ProxyServer.PNG)
 
 ### 3.	Semua client yang ada HARUS menggunakan konfigurasi IP dari DHCP Server. Client yang melalui Switch1 mendapatkan range IP dari [prefix IP].1.20 - [prefix IP].1.99 dan [prefix IP].1.150 - [prefix IP].1.169 
 
-![](img\modul3_no3_Jipangu_switch1-conf.PNG)
+![](img/modul3_no3_Jipangu_switch1-conf.PNG)
 
 ### 4.	Client yang melalui Switch3 mendapatkan range IP dari [prefix IP].3.30 - [prefix IP].3.50
 
-![](img\modul3_no4_Jipangu_switch3-conf.PNG)
+![](img/modul3_no4_Jipangu_switch3-conf.PNG)
