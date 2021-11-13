@@ -50,6 +50,24 @@ Kemudian jadikan Water7 sebagai Proxy Server
 
 ![](img/modul3_no4_Jipangu_switch3-conf.PNG)
 
+### 5. Client mendapatkan DNS dari EniesLobby dan client dapat terhubung dengan internet melalui DNS tersebut
+
+![](img/modul3_no5_eniesLobby_DNS-forwarder.PNG)
+
+![](img/modul3_no5_eniesLobby_domain-reverse.PNG)
+
+![](img/modul3_no5_eniesLobby_domain.PNG)
+
+### 6. Lama waktu DHCP server meminjamkan alamat IP kepada Client yang melalui Switch1 selama 6 menit sedangkan pada client yang melalui Switch3 selama 12 menit. Dengan waktu maksimal yang dialokasikan untuk peminjaman alamat IP selama 120 menit. 
+
+![](img/modul3_no6_Jipangu_set-dhcp-time.PNG)
+
+### 7. Luffy dan Zoro berencana menjadikan Skypie sebagai server untuk jual beli kapal yang dimilikinya dengan alamat IP yang tetap dengan IP [prefix IP].3.69 
+
+![](img/modul3_no7_Jipangu_fixed-dhcp.PNG)
+
+![](img/modul3_no7_RESULT_skypie-fixed.PNG)
+
 ### 8. Loguetown digunakan sebagai client Proxy agar transaksi jual beli dapat terjamin keamanannya, juga untuk mencegah kebocoran data transaksi. Pada Loguetown, proxy harus bisa diakses dengan nama jualbelikapal.yyy.com dengan port yang digunakan adalah 5000
 jualbelikapal.b08.com harus terdaftar pada DNS agar dapat diakses oleh klien :
 ####  Konfigurasi Domain Pada EniesLobby
@@ -86,3 +104,21 @@ waktu akses harus dideteksi untuk pelarangan akses oleh squid-conf  :
 ![](https://github.com/tsnzzhr/Jarkom-Modul3-B08-2021/tree/main/img)
 #### Hasil Test - Dilarang Akses
 ![](https://github.com/tsnzzhr/Jarkom-Modul3-B08-2021/blob/main/img/modul3_no10_loguetown_RESULT_forbidden_403.PNG)
+
+### 11. Agar transaksi bisa lebih fokus berjalan, maka dilakukan redirect website agar mudah mengingat website transaksi jual beli kapal. Setiap mengakses google.com, akan diredirect menuju super.franky.yyy.com dengan website yang sama pada soal shift modul 2. Web server super.franky.yyy.com berada pada node Skypie
+
+eniesLobby
+
+![](img/modul3_no11_eniesLobby_domain-conf.PNG)
+
+![](img/modul3_no11_eniesLobby_domain-conf2.PNG)
+
+water7
+
+![](img/modul3_no11_Water7_ip-change.PNG)
+
+![](img/modul3_no11_water7_conf-webserver.PNG)
+
+Skypie
+
+![](img/modul3_no11_Skypie_apache2-conf.PNG)
